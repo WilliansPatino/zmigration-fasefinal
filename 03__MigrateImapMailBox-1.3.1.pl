@@ -91,8 +91,8 @@ my $ZimbraUsersList = $Arg1; # Lista de usuarios
 #	  mail: usuario@proviasdes.gob.pe
 
 # IMAP Servers
-my $SourceMailServer = webmail.proviasdes.gob.pe;
-my $DestinationMailServer = mail.proviasdes.gob.ve;
+my $SourceMailServer = "webmail.proviasdes.gob.pe";
+my $DestinationMailServer = "mail.proviasdes.gob.ve";
 
 # Mail Command
 my $isc = "/usr/bin/imapsync";
@@ -116,8 +116,8 @@ my $au1 = "--authuser1 $AdminAccount1";
 my $au2 = "--authuser2 $AdminAccount2"; 
 
 # Auth by file
-my $pau1 = "--passfile1 zmigration-fase-final/keys/webmail";
-my $pau2 = "--passfile2 zmigration-fase-final/keys/mail";
+my $pau1 = "--passfile1 zmigration-fase-final/keys/webmail.txt";
+my $pau2 = "--passfile2 zmigration-fase-final/keys/mail.txt";
 
 my $hst2 = "--host2 $DestinationMailServer --ssl2"; 
 my $usr2 = "--user2 $ZimbraUser";
@@ -171,7 +171,7 @@ close(MYFILE);
 print color("green"),
 "check this files:  \n\t- $logfile1 \n\n";
 print color("reset");
-die "ce fini ici...\n";
+die "C'est fait \n";
 
 sub WhatIDo {  # What Do thi script
     system("clear");
