@@ -38,6 +38,7 @@
 #			- passfile instead password as argument
 #			- ensure only one instance runs
 #			- test mode can be indicated at console
+#   19.11.2023  - Argumento por consola: el nombre del archivo con la listas de usuarios
 
 
 ####### DO NOT DELETE #########
