@@ -87,19 +87,19 @@ print MYFILE "\tRegistros Procesados\n";
 ##my $ZimbraUsersList = "ZimbraUsers-sorted.txt"; # Lista de usuarios
 my $ZimbraUsersList = $Arg1; # Lista de usuarios
 #		---- formato requerido ----
-#	  mail: usuario@mppre.gob.ve
+#	  mail: usuario@proviasdes.gob.pe
 
 # IMAP Servers
-my $SourceMailServer = "10.10.10.5";
-my $DestinationMailServer ="10.11.11.28";
+my $SourceMailServer = webmail.proviasdes.gob.pe;
+my $DestinationMailServer = mail.proviasdes.gob.ve;
 
 # Mail Command
 my $isc = "/usr/bin/imapsync";
 
 my $BufferSize = "8192000";  # Do not change					
 
-my $AdminAccount1 = "syncbms2\@mppre.gob.ve";  
-my $AdminAccount2 = "syncbms2\@gob.ve";  
+my $AdminAccount1 = "admin\@proviasdes.gob.pe";  
+my $AdminAccount2 = "admin\@proviasdes.gob.pe";  
 
 my $ZimbraUser = "";
 
@@ -115,8 +115,8 @@ my $au1 = "--authuser1 $AdminAccount1";
 my $au2 = "--authuser2 $AdminAccount2"; 
 
 # Auth by file
-my $pau1 = "--passfile1 /home/mayordomo/syncMailbox.zimbra-bms2/auth1";
-my $pau2 = "--passfile2 /home/mayordomo/syncMailbox.zimbra-bms2/auth2";
+my $pau1 = "--passfile1 zmigration-fase-final/keys/webmail";
+my $pau2 = "--passfile2 zmigration-fase-final/keys/mail";
 
 my $hst2 = "--host2 $DestinationMailServer --ssl2"; 
 my $usr2 = "--user2 $ZimbraUser";
