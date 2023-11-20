@@ -1,0 +1,1 @@
+sudo install  -y perl-App-cpanminus
