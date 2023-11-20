@@ -2,5 +2,8 @@
 
 # Zimbra admin  pass
 
-export WEBMAIL="12qwaszx!!"
-export MAIL="12qwaszx!!"
+ZSOURCEKEY=12qwaszx!!
+ZDESTINKEY=12qwaszx!!
+
+export ZSOURCEKEY
+export ZDESTINKEY
