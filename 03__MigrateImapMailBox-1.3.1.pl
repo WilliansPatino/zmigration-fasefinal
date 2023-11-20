@@ -109,7 +109,7 @@ my $buf = "--buffersize $BufferSize";
 my $nos = "--nosyncacls";
 my $sub = "--subscribe_all"; 
 #my $hst1 = "--host1 $SourceMailServer --ssl1";
-my $hst1 = "--host1 $SourceMailServer --sslargs1 SSL_verify_mode=1";
+my $hst1 = "--host1 $SourceMailServer --sslargs1 SSL_verify_mode=1 --ssl1 ";
 my $usr1 = "--user1 $ZimbraUser";
 
 # Auth on host
@@ -121,7 +121,7 @@ my $pau1 = "--passfile1 KEY-ORIGEN";
 my $pau2 = "--passfile2 KEY-DESTINO";
 
 #my $hst2 = "--host2 $DestinationMailServer --ssl2"; 
-my $hst2 = "--host2 $DestinationMailServer --sslargs2 SSL_verify_mode=1"; 
+my $hst2 = "--host2 $DestinationMailServer --sslargs2 SSL_verify_mode=1 --ssl2"; 
 my $usr2 = "--user2 $ZimbraUser";
 my $syn = "--syncinternaldates";
 my $useh1 = "--useheader 'Message-ID'";
