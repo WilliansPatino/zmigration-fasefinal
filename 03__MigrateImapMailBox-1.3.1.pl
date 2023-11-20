@@ -108,7 +108,8 @@ my $ZimbraUser = "";
 my $buf = "--buffersize $BufferSize";
 my $nos = "--nosyncacls";
 my $sub = "--subscribe_all"; 
-my $hst1 = "--host1 $SourceMailServer --ssl1";
+#my $hst1 = "--host1 $SourceMailServer --ssl1";
+my $hst1 = "--host1 $SourceMailServer --sslargs1 SSL_verify_mode=1";
 my $usr1 = "--user1 $ZimbraUser";
 
 # Auth on host
@@ -119,7 +120,8 @@ my $au2 = "--authuser2 $AdminAccount2";
 my $pau1 = "--passfile1 zmigration-fase-final/keys/webmail.txt";
 my $pau2 = "--passfile2 zmigration-fase-final/keys/mail.txt";
 
-my $hst2 = "--host2 $DestinationMailServer --ssl2"; 
+#my $hst2 = "--host2 $DestinationMailServer --ssl2"; 
+my $hst2 = "--host2 $DestinationMailServer --sslargs2 SSL_verify_mode=1"; 
 my $usr2 = "--user2 $ZimbraUser";
 my $syn = "--syncinternaldates";
 my $useh1 = "--useheader 'Message-ID'";
