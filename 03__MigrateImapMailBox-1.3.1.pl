@@ -118,7 +118,7 @@ my $au2 = "--authuser2 $AdminAccount2";
 
 # Auth by file
 my $pau1 = "--passfile1 ~/zmigration-fase-final/keys/webmail.txt";
-my $pau2 = "--passfile2 ~/zmigration-fase-final/keys/mail.txt";
+my $pau2 = "--passfile2 ./keys/mail.txt";
 
 #my $hst2 = "--host2 $DestinationMailServer --ssl2"; 
 my $hst2 = "--host2 $DestinationMailServer --sslargs2 SSL_verify_mode=1"; 
