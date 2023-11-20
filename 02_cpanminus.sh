@@ -1,1 +1,1 @@
-sudo install  -y perl-App-cpanminus
+sudo dnf install  -y perl-App-cpanminus
