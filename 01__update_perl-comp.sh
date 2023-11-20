@@ -4,4 +4,7 @@
 sudo cpan
 install File::NFSlock 
 install IO::Socket::IP
+cpanm Encode::IMAPUTF7
+cpanm File::NFSlock 
+cpanm IO::Socket::IP
 
