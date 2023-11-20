@@ -160,7 +160,7 @@ open(DATOS,$ZimbraUsersList) || die " no existe el archivo: $ZimbraUsersList\n\n
 
 	
 	my $Prms = "$buf $nos $sub $hst1 $usr1 $au1 $pau1 $hst2 $usr2 $au2 $pau2 $syn $useh1 $useh2 $useh3 $ex1 $ex2 $ex3 $ex4 $ex5 $ex6 $ex7 $ex8 $tst";
-	my $ImapSyncro = $isc.' '.$Prms.' --logfile /tmp/LOG-zmigration.log' ;
+	my $ImapSyncro = $isc.' '.$Prms.' --logdir /tmp --logfile zmigration.log' ;
 
         
 	system("$ImapSyncro" );
