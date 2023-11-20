@@ -88,7 +88,7 @@ print MYFILE "\tRegistros Procesados\n";
 ##my $ZimbraUsersList = "ZimbraUsers-sorted.txt"; # Lista de usuarios
 my $ZimbraUsersList = $Arg1; # Lista de usuarios
 #		---- formato requerido ----
-#	  mail: usuario@proviasdes.gob.pe
+#	  usuario@proviasdes.gob.pe
 
 # IMAP Servers
 my $SourceMailServer = "webmail.proviasdes.gob.pe";
