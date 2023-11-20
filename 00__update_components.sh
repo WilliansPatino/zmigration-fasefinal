@@ -24,7 +24,8 @@ sudo dnf update && sudo dnf install -y imapsync && sudo dnf install -y ccze
  perl-Test-Warn \
  perl-Sub-Uplevel \
  perl-Proc-ProcessTable \
- ca-certificates
+ perl-App-cpanminus \
+ ca-certificates 
 
 
 
